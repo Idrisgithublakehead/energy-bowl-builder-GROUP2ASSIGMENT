@@ -47,6 +47,15 @@ class EnergyBowl {
 
 // first we can listen if the user actually submits the form
 document.getElementById("bowlForm").addEventListener("submit", function(event) {
+    const bowl = new EnergyBowl(
+    base,
+    fruits,
+    toppings,
+    protein,
+    sweetener,
+    size,
+    instructions
+);
     event.preventDefault(); 
 
     // after that we can Get the  base selection
